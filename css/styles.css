@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight:600;
+    color: #4a4848;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+html, body{
+    margin: 0;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:8em;
+    margin-left: 6em;
+}
+
+.main-header img{
+    height: 250px;
+}
+
+.nav-header a{
+   padding-right: 30px;
+   font-size: 1.1em;
+   text-decoration: none;
+}
+
+.nav-header a:hover{
+    color: #999;
+}
+
+#btn-header{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 25px;
+    border: solid black 2px;
+    font-size: 1.1em;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+main button{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: solid black 2px;
+    font-size: 1.1em;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.index-block1{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    background-image: url(../images/Home/Home-Hero.jpg);
+    background-size: cover;
+    height: 750px;
+}
+
+.ruled-grid-index-block2{
+
+    --gap: 2em;
+    --line-thickness: 2px;
+    --line-color: #999;
+    --line-offset: calc(var(--gap)/2);
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: #f1f2f8;   
+    align-items: stretch;  
+    gap: var(--gap);
+    overflow: hidden;   
+}
+
+.ruled-grid-index-block2 > .statistics > h1
+, .ruled-grid-index-block2 > .statistics > p{
+    justify-self: center;
+}
+
+.ruled-grid-index-block2 > .statistics{
+    position: relative;
+}
+
+/* pseudo elements */
+
+.ruled-grid-index-block2 > .statistics::before,
+.ruled-grid-index-block2 > .statistics::after{
+    content: "";
+    background-color: var(--line-color);
+    position: absolute;
+}
+
+/* row lines */
+
+.ruled-grid-index-block2 > .statistics::after{
+    width: 100%;
+    height: var(--line-thickness);
+    top: calc(var(--line-offset)*-1);
+    left: 0;
+}
+
+/* column lines */
+
+.ruled-grid-index-block2 > .statistics::before{    
+    width: var(--line-thickness);
+    height: 75%;
+    top: 12.5%;
+    left: calc(var(--line-offset)*-1);
+}
+
+
+.header-index-block3{
+    display: flex;
+    justify-content: center;
+}
+
+.index-block3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin: 2em;
+}
+
+/* .index-block3 > *{
+    width: 500px;
+    justify-self: center;
+    padding: 2em;
+
+} */
+
+.home-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25vw;
+    height: auto;
+    padding: 4em;
+}
+
+.index-block3 > div img{
+    height: 40%;
+    width: auto;
+    border-radius: 15px;
+}
+
+.index-block1 button{
+    justify-self: center;
+    margin-top: 2em;
+}
+
+.index-block4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f1f2f8;
+    background-size: 100vw;
+    padding: 8em;
+    padding-left: 10em;
+    padding-right: 10em;    
+}
+
+.index-block4-col1,
+.index-block4-col2{
+    margin: 4em;
+}
+
+.index-block5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+
+.index-block5 img{
+    height: 100px;
+    width: auto;
+}
+
+.index-block5 h3{
+    margin-right: 20em;
+    margin-left: 20em;
+    text-align: center;
+    overflow: auto;
+}
+
+.index-block5 span{
+    padding: 5px;
+}
+
+.index-block6{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/Home/CTA.jpg);
+    background-size: cover;
+    height: 750px;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+
+.index-block6 > *{
+    margin: 15px;
+}
+
+
+.index-block4-col2 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.contact-block1{
+    display: block;
+    justify-items: center;
+    align-content: center;
+    height: 500px;
+    background-image: url(../images/Contact/Contact-Hero.jpg);
+    background-size: cover;
+    justify-items: center;
+}
+
+.contact-block2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
+#contact-block2-col1-items{
+    display: block;
+   
+
+}
+
+.cont-bl2-cl1 img{
+    height: 15px;
+    padding: 0.5;
+    margin-right: 10px;
+    vertical-align:auto;
+}
+
+.contact-block2-col2{
+    background-color: #f1f2f8;
+    border-radius: 20px;
+    padding: 3em;
+    padding-top: 1em;
+}
+
+.contact-block2-col2 form label{
+    display: flex;
+    /* visibility: hidden; */
+    font-size: xx-small;
+    font-weight: 100;
+    color: #f1f2f8;
+    
+}
+
+.contact-block2-col2 form input{
+    height: 3em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-block2-col2 form textarea{    
+    border: none;
+    border-radius: 5px;
+}
+
+#contactButton{
+    width: fit-content;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;    
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+
+.main-footer img{
+    height: 165px;
+}
+
+.nav-footer a{
+   padding-right: 30px;
+   font-size: 1.1em;
+   text-decoration: none;
+}
+
+.nav-footer a:hover{
+    color: #999;
+}
+
