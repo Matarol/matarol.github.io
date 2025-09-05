@@ -299,6 +299,50 @@ main button{
     background-color: black;
 }
 
+.about-block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(../images/About/About-Hero.jpg);
+    background-size: cover;
+}
+
+.about-block2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    justify-self: center;
+    justify-items: center;
+    text-justify: auto;    
+    margin-top: 4em;
+}
+
+/* .about-block2-part2{
+    padding: 4em; 
+    padding-right: 8em;
+} */
+
+.about-block2-part1 img{
+    height: 400px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.about-block3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/About/CTA.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding-left: 44em;
+    padding-right: 44em;
+}
+
 .main-footer{
     display: flex;
     justify-content: space-around;
