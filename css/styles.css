@@ -54,6 +54,10 @@ html, body{
     padding-right: 25px;
 }
 
+#btn-header:hover{
+    background-color: #d8d7d7;
+}
+
 main button{
     background-color: black;
     color: white;
@@ -63,6 +67,12 @@ main button{
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 2em;
+    
+}
+
+button:hover{
+    background-color: #555;
 }
 
 .index-block1{
@@ -148,6 +158,7 @@ main button{
     justify-items: center;
     text-align: center;
     padding: 1em;
+    margin-bottom: 3em;
 }
 
 .index-block3-service1 img,
@@ -223,6 +234,96 @@ main button{
     margin: 15px;
 }
 
+.services-block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url(../images/Services/Services-Hero.jpg);
+    background-size: cover;
+}
+
+.services-block2-service1,
+.services-block2-service2,
+.services-block2-service3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    justify-self: center;
+    justify-items: center;
+    text-justify: auto;    
+    margin-left: 4em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.services-block2-service1-part2 img,
+.services-block2-service2-part1 img,
+.services-block2-service3-part2 img{
+    height: 400px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.services-block2-service1-part1,
+.services-block2-service2-part2,
+.services-block2-service3-part1{
+    padding-right: 4em;
+    padding-left: 6em;
+}
+
+.services-block3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url(../images/Services/CTA.jpg);
+    background-size: cover;
+}
+
+.about-block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(../images/About/About-Hero.jpg);
+    background-size: cover;
+}
+
+.about-block2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    justify-self: center;
+    justify-items: center;
+    text-justify: auto;    
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.about-block2-part1 img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 50px;
+    padding: 2em;
+}
+
+.about-block3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/About/CTA.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+}
+
+
+
 .contact-block1{
     display: block;
     justify-items: center;
@@ -291,93 +392,8 @@ main button{
     background-color: black;
 }
 
-.about-block1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    background-image: url(../images/About/About-Hero.jpg);
-    background-size: cover;
-}
-
-.about-block2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1500px;
-    justify-self: center;
-    justify-items: center;
-    text-justify: auto;    
-    margin-top: 4em;
-    margin-bottom: 4em;
-}
-
-.about-block2-part1 img{
-    height: 400px;
-    width: auto;
-    border-radius: 15px;
-}
-
-.about-block3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/About/CTA.jpg);
-    background-size: cover;
-    height: 700px;
-    text-align: center;
-    padding-left: 44em;
-    padding-right: 44em;
-}
-
-.services-block1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-image: url(../images/Services/Services-Hero.jpg);
-    background-size: cover;
-}
-
-.services-block2-service1,
-.services-block2-service2,
-.services-block2-service3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1500px;
-    justify-self: center;
-    justify-items: center;
-    text-justify: auto;    
-    margin-left: 4em;
-    margin-top: 4em;
-    margin-bottom: 4em;
-}
-
-.services-block2-service1-part2 img,
-.services-block2-service2-part1 img,
-.services-block2-service3-part2 img{
-    height: 400px;
-    width: auto;
-    border-radius: 15px;
-}
-
-.services-block2-service1-part1,
-.services-block2-service2-part2,
-.services-block2-service3-part1{
-    padding-right: 4em;
-    padding-left: 6em;
-}
-
-.services-block3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-image: url(../images/Services/CTA.jpg);
-    background-size: cover;
+#contactButton:hover{
+    background-color: #555;
 }
 
 .main-footer{
